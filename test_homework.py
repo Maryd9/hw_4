@@ -45,6 +45,11 @@ def test_circle():
 
     assert length == 144.51326206513048
 
+    print(f"\nДлина круга {length} \n"
+          f"Площадь круга {area}")
+
+
+
 
 def test_random_list():
     """
