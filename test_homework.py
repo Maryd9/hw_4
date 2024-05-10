@@ -52,16 +52,8 @@ def test_random_list():
     """
     # TODO создайте список
     l = []
-    l.append(random.randint(1, 100))
-    l.append(random.randint(1, 100))
-    l.append(random.randint(1, 100))
-    l.append(random.randint(1, 100))
-    l.append(random.randint(1, 100))
-    l.append(random.randint(1, 100))
-    l.append(random.randint(1, 100))
-    l.append(random.randint(1, 100))
-    l.append(random.randint(1, 100))
-    l.append(random.randint(1, 100))
+    for _ in range(10):
+        l.append(random.randint(1, 100))
     l.sort()
 
     assert len(l) == 10
